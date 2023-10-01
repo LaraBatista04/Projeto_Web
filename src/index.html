@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
+    <!-- Adicione a folha de estilo do FontAwesome (ou outra fonte de ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,10 +15,20 @@
         }
         
         header {
-            background-color: #5b006d;
-            color: #fff;
+            background-color: #f6c9ff;
+            color: #60006d;
             text-align: center;
             padding: 20px;
+            position: relative; /* Adicione esta propriedade para posicionar a imagem */
+        }
+
+        /* Estilize o logotipo */
+        .logo {
+            position: absolute; /* Posiciona a imagem absolutamente dentro do cabeçalho */
+            top: 10px; /* Define a distância do topo */
+            left: 10px; /* Define a distância da esquerda */
+            width: 150px; /* Largura da imagem */
+            height: auto; /* Altura ajustada automaticamente */
         }
         
         nav {
@@ -48,25 +60,44 @@
             font-size: 18px;
             line-height: 1.5;
         }
+
+        /* Estilize o link do ícone */
+        .login-icon-link {
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <header>
+        <!-- Adicione o logotipo como uma imagem -->
+        <img src="https://king-assets.yampi.me/dooki/61d5966d789a1/61d5966d789a8.png" alt="Logo do Site" class="logo">
         <h1>Nome do Site</h1>
         <p>Descrição breve do site.</p>
+        
     </header>
 
     <nav>
-        <a href="index.html">Página Inicial</a>
-        <a href="vitrine">Vitrine</a>
-        <a href="pesquisa">Pesquisa</a>
-        <a href="cesta">Carrinho</a>
-        <a href="login">Login</a>
+        <a href="/index.html">Página Inicial</a>
+        <a href="/vitrine">Vitrine</a>
+        <a href="/cesta">Carrinho</a>
+        <!-- Substitua o texto "Login" pelo ícone de pessoa e redirecione para a página de login -->
+        <a href="/login" class="login-icon-link"><i class="fa fa-user"> Login/Cadastro</i></a>
+        
     </nav>
 
+    
     <div class="container">
+        
         <h1>Bem-vindo à nossa página inicial!</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, lorem a venenatis congue, nulla eros tincidunt tortor, id scelerisque libero velit ac tortor.</p>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Digite o nome do produto">
+            <div class="input-group-append">
+              <button class="btn btn-primary btn-sm" type="button">Pesquisar</button>
+            </div>
+          </div>
+          
     </div>
     <app-root></app-root>
 </body>
