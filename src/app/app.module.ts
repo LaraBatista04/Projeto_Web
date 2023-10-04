@@ -16,6 +16,7 @@ import { DetalhePandoraComponent } from './detalhe-pandora/detalhe-pandora.compo
 import { DetalheArgolaAnelComponent } from './detalhe-argola-anel/detalhe-argola-anel.component';
 import { BuscaComponent } from './busca/busca.component';
 import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PaginaInicialComponent } from './pagina-inicial/pagina-inicial.componen
     DetalhePandoraComponent,
     DetalheArgolaAnelComponent,
     BuscaComponent,
-    PaginaInicialComponent
+    PaginaInicialComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,

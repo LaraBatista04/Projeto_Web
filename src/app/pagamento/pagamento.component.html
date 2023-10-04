@@ -1,0 +1,73 @@
+<div class="container mt-5">
+    <div class="row">
+        <!-- Coluna para o código de login -->
+        <div class="col-md-6">
+            <div class="border-right">
+                <div class="pagamento">
+                    <h1 class="text-rosa">Página de Pagamento</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" class="form-control" id="endereco" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cep">CEP:</label>
+                            <input type="text" class="form-control" id="cep" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" class="form-control" id="complemento">
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" class="form-control" id="cpf" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="infoAdicionais">Informações Adicionais:</label>
+                            <textarea class="form-control" id="infoAdicionais" rows="3"></textarea>
+
+                        </div>
+                        <button type="submit" class="btn purple-background">Concluir Compra</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="text-center">
+                <div class="Resumo da Compra">
+                    <h2 class="text-rosa">Resumo da Compra</h2>
+                    <label for="formasPagamento">Formas de Pagamento:</label>
+                    <select class="form-control" id="formasPagamento">
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantidadeProdutos">Quantidade de Produtos:</label>
+                    <input type="text" class="form-control" id="quantidadeProdutos" value="3" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="resumoCompra">Resumo de Compra:</label>
+                    <textarea class="form-control" id="resumoCompra" rows="3" readonly>
+1 unidade de Caneta de resina - R$ 20.00
+2 unidades de Conjunto joias da noite - R$ 60.00
+            </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="valorTotal">Valor Total:</label>
+                    <input type="text" class="form-control" id="valorTotal" value="80.00" readonly>
+                </div>
+
+                <a href="/vitrine" class="btn purple-background">Voltar as compras</a>
+
+            </div>
+
+        </div>

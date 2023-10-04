@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { ReenvioSenhaComponent } from './reenvio-senha/reenvio-senha.component';
 import { PaginaDeCadastroComponent } from './pagina-de-cadastro/pagina-de-cadastro.component';
 import { BuscaComponent } from './busca/busca.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 const routes: Routes = [
   { path: 'vitrine', component: VitrineComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'cadastro', component: PaginaDeCadastroComponent },
   { path: 'busca', component: BuscaComponent },
   {path: 'home', component: PaginaInicialComponent},
+  { path: 'pagamento', component: PagamentoComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' },
 ];

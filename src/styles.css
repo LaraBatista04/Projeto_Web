@@ -1,7 +1,118 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+header {
+    background-color: #8B73FF;
+    color: #F8EAFF;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 150px;
+    height: auto;
+}
 .purple-background {
     background-color: #E1A3FF;
     align-items: center;
     color: #FFFFFF;
+}
+
+.text-rosa {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    color: #E86AA7;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+header {
+    background-color: #8B73FF;
+    color: #F8EAFF;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FFA8DC;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px  #F8EAFF
+}
+
+h1 {
+    font-size: 36px;
+}
+
+
+p {
+    font-size: 18px;
+}
+
+/* Estilize o link do ícone */
+.login-icon-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Estilos para telas menores (tablets e celulares) */
+@media (max-width: 1024px) {
+    .navbar {
+        background-color: #FFA8DC;
+        padding: 10px;
+    }
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 10px 0;
+    }
+
+    .form-control-right {
+        margin: 10px 0;
+        width: 100%;
+    }
+.logo{
+    width: 65px;
+    height: auto;
+}
+h1{
+    font-size: 20px;
+}
+h6{
+    font-size: 10px;
+}
 }
