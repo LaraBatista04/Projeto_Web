@@ -1,7 +1,8 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-
 .purple-background {
     background-color: #E1A3FF;
     align-items: center;
-    color: #FFFFFF;
+}
+.carousel-inner img {
+    display: block;
+    margin: 0 auto;
 }

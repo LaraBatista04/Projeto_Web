@@ -1,19 +1,33 @@
-<div class="login">
-  <div class="container">
-    <h2 class="mt-5">Login</h2>
-    <form>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="form-control" required>
+<div class="container mt-5">
+  <div class="row">
+      <!-- Coluna para o código de login -->
+      <div class="col-md-6">
+        <div class="border-right">
+          <div class="login">
+              <h2>Login</h2>
+              <form>
+                  <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="senha">Senha:</label>
+                      <input type="password" id="senha" name="senha" class="form-control" required>
+                  </div>
+                  <button type="submit" class="btn purple-background">Entrar</button>
+                  <br><br>
+                  <button routerLink="/reenvio-senha" class="btn purple-background">Esqueci minha senha</button>
+              </form>
+          </div>
       </div>
-      <div class="form-group">
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" class="form-control" required>
+    </div>
+      <!-- Coluna para o botão de cadastro -->
+      <div class="col-md-6">
+          <div class="text-center">
+              <h2>Cadastre-se</h2>
+              <p>Ainda não tem uma conta? Clique abaixo para se cadastrar.</p>
+              <a href="/cadastro" class="btn purple-background">Cadastro</a>
+          </div>
       </div>
-      <button type="submit" class="btn btn-primary">Entrar</button><br><br>
-      <button routerLink="/reenvio-senha" class="btn btn-primary">Esqueci minha senha</button>
-    </form><br>
-  
-
   </div>
-  
+</div>
